@@ -1,0 +1,89 @@
+{
+    "attributes": {
+            "type": "Q_SELECT",
+            "key": "ATTRIBUTE_LIST",
+            "values": [
+                    "listTechnologyType",
+                    "listComponentType",
+                    "accessoryName"
+            ],
+            "defaultValue": null       
+    },
+    "dependentControls":[ 
+        {
+            "key":"listTechnologyType",
+            "dependentElements":[
+                {
+                    "type": "Q_SELECT",
+                    "key": "OPERATORS",
+                    "values": [
+                        "contains",
+                        "notContains"
+                    ],
+                    "defaultValue": null
+                },
+                {
+                    "type": "Q_SELECT",
+                    "key": "TECHNOLOGY_LIST",
+                    "values": [
+                        "listTechnologyType.AirPlay",
+                        "listTechnologyType.iAP",
+                        "listTechnologyType.HomeKit",
+                        "listTechnologyType.WAC",
+                        "listTechnologyType.GameController"
+                    ],
+                    "defaultValue": null
+                }
+            ]
+        },
+        {
+            "key":"listComponentType",
+            "dependentElements":[
+                {
+                    "type": "Q_SELECT",
+                    "key": "OPERATORS",
+                    "values": [
+                        "contains",
+                        "notContains"
+                    ],
+                    "defaultValue": null
+                },
+                {
+                    "type": "Q_SELECT",
+                    "key": "COMPONENT_LIST",
+                    "values": [
+                        "listComponentType.AppleWatch",
+                        "listComponentType.AuthenticationChips",
+                        "listComponentType.HeadphoneRemoteAndMic",
+                        "listComponentType.GCM",
+                        "listComponentType.LightningAudioModule",
+                        "listComponentType.Lightning",
+                        "listComponentType.30Pin"
+                    ],
+                    "defaultValue": null
+                }
+            ]
+        },
+        {
+            "key":"accessoryName",
+            "dependentElements":[
+                {
+                    "type": "Q_SELECT",
+                    "key": "OPERATORS",
+                    "values": [
+                        "equals",
+                        "notEquals"
+                    ],
+                    "defaultValue": null
+                },
+                {
+                    "type": "Q_TEXTBOX",
+                    "key": "ACCESSORY_NAME",
+                    "values":"",
+                    "defaultValue": null
+                }
+            ]
+        }
+    ],
+    "state": "SUCCESS"
+}

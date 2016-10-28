@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="Scripts/libs/Bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="#"> MFi Rule Admin</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <div class="dropdown main_condition">
+          <select class="operator main-condition-initial">
+                <option>All</option>
+                <option>Any</option>
+          </select>
+          </div> <span class="main_condition">of the following are true</span>
+      </div>
+       <div id="rule-container">
+            <div class="row-condition-initial">
+                <table id="rule-table" class="table table-sm table-striped">
+                    <tbody>
+                        <tr class="row_status" colspan="3">														
+                        <td class="initial-td" >
+                         <div class="row-left-controls row-condition-initial">
+                             <div id="dynamic-controls">
+                                 <div id="attribute-select"></div>
+                                 <div id="dependent-controls"></div>
+                             </div>
+                        </div>
+                            <div class="row-right-controls row-condition-initial">
+                                <div class="glyphicon glyphicon-plus"></div>
+                                <div class="glyphicon glyphicon-minus"></div>
+                                <div class="glyphicon glyphicon-option-horizontal"></div>
+                            </div></td>												
+                        </tr>
+                                            
+                    </tbody>
+                </table>
+                
+            </div>
+          </div>
+<!--          <button id="create-rule">Create</button>-->
+
+    </div>
+<!-- ****************************************************************************
+        Load JS files here
+     ****************************************************************************
+         jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="Scripts/libs/require.js" data-main="Scripts/main.js"></script>
+
+    </body>
+
+</html>
+
+ <!--
+                            <select class="parameter row-condition-initial">
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                            </select>
+                            <select class="operator row-condition-initial">
+                                <option>=</option>
+                                <option>!=</option>
+                            </select>
+                            <select class="parameter row-condition-initial">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        --> 

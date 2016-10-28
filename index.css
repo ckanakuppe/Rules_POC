@@ -1,0 +1,45 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 20px 15px;
+  text-align: center;
+  float: left;
+}
+.main_condition, .row-condition-initial {
+    display: inline;
+    
+}
+/*
+#rule-container{
+    height: 86px;
+    width: 700px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    position: relative;
+    top: 97px;
+}
+*/
+.row-right-controls.row-condition-initial {
+    position: absolute;
+    right: 30px;
+    bottom: 8px;
+}
+#dynamic-controls div{
+    display:inline;
+}
+table{
+    width:80% !important;
+}
+table tbody tr td.initial-td{
+    border: 2px solid #ddd;
+    position: relative;
+}
+select {
+    width: 170px;
+    margin-right: 5px;
+}
+
+div.glyphicon {
+    padding-right:5px;
+}
